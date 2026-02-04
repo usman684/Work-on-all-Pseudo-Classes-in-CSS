@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Helper Dashboard</title>
+    <style>
+        .btn { 
+            background: gray; 
+            color: white; 
+            padding: 10px 20px; 
+            cursor: pointer; }
+        .btn:hover { 
+            background: blue; }
+        .inp:focus { 
+            border: 2px solid green; 
+            background: #ffffcc;
+         }
+    </style>
+</head>
+<body>
+    <h1>Student Helper Dashboard</h1>
+
+    <h2>BMI Calculator</h2>
+    <input class="inp" type="number" name="" id="weight" placeholder="Enter weight">
+    <input class="inp" type="number" id="height" placeholder="height">
+    <button class="btn" onclick="bmicalculate()">Calculate</button>
+    <p id="bmicalculate"></p>
+
+    
+
+    <h2>Grade Calculator</h2>
+    <input class="inp" type="number" name="" id="obnmarks" placeholder="Obtain Marks">
+    <input class="inp" type="number" name="" id="totmarks" placeholder="Total Marks">
+    <button class="btn" onclick="grdCalculate()">Calculate</button>
+    <p id="gradeResult"></p>
+
+
+    <script>
+        function bmicalculate(){
+            let w = document.getElementById("weight").value;
+            let h = document.getElementById("height").value;
+            let BMI = w/h**2;
+            document.getElementById("bmicalculate").innerText = "BMI: " + BMI.toFixed(2);
+            if(w <= 0 || h <= 0){
+                alert("Please enter valid weight and height!");
+                return;}
+            else if(BMI < 18.5) {
+            alert("Underweight")}
+            else if(BMI < 25) {alert("Normal weight")}
+            else if(BMI < 30) {alert("Overweight")}
+            else {alert("Obese");}
+
+        }
+        
+        function grdCalculate(){
+            let obnmarks = document.getElementById("obnmarks").value;
+            let totmarks = document.getElementById("totmarks").value;
+            let Grade = (obnmarks/totmarks) * 100;
+            document.getElementById("gradeResult").innerText = "Grade: " + Grade.toFixed(2) + "%";
+
+            if(totmarks <= 0 || obnmarks < 0 || obnmarks > totmarks){
+                 alert("Please enter valid marks!")
+                    return;}
+
+            if(Grade >= 80) {alert("Grade is A")}
+            else if(Grade >= 60){alert("Grade is B")}
+            else if(Grade >= 40){alert("Grade is C")}
+            else {alert("You have Failed")}
+        }
+    </script>
+
+    <h2></h2>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work on all Pseudo Classes in CSS</title>
+    <style>
+        .button{
+            background-color: gray;
+            color: black;
+            padding: 10px;
+            cursor: pointer;
+            margin: 15px;
+        }
+        .button:hover{
+            background-color: blue;
+            color: white;
+        }
+        .inp{
+            border: black solid 2px;
+            padding: 5px;
+            cursor: pointer;
+            margin: 15px;
+        }
+        .inp:focus{
+            border: green;
+            background-color: yellow;
+        }
+        .link{
+            color: blue;
+             padding: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 15px;
+        }
+        .link:visited{
+            color: purple;
+        }
+        .link:hover{
+            color: red;
+        }
+        .link:active{
+            color: orange;
+        }
+        li:nth-child(even){
+            background-color: lightgray;
+        }
+        li:nth-child(odd){
+            color: red;
+        }
+        p:first-child{
+            color: green;
+        }
+        p:last-child{
+            color: blue;
+        }
+        .b{
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        .b:checked {
+    accent-color: green;
+}
+    </style>
+</head>
+<body>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores amet eveniet sunt eaque dolor, rem repudiandae obcaecati vitae. Quod quos amet vel neque obcaecati mollitia. Sed nobis enim eveniet totam voluptatum accusantium at, vel error harum! Possimus, doloribus. Facere, explicabo?</p>
+    <h1>Work on all Pseudo Classes in CSS</h1>
+    <button class="button">Save</button><br>
+    <input class="inp" type="text" name="" id="text" placeholder="Enter Your name"><br><br>
+    <a class="link" href="https://www.youtube.com/" target="_blank">youtube</a><br>
+
+    <ul class="li">
+        <li>IT</li>
+        <li>CS</li>
+        <li>SE</li>
+        <li>AI</li>
+        <li>BBA</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum, aliquid eveniet tenetur beatae delectus dolor, nobis aut corrupti similique ullam tempore. Aut explicabo temporibus eaque facere, doloremque magnam quisquam vero qui voluptatum est ipsa numquam rem quam natus quas minus laudantium. Enim labore consequatur expedita libero quas, ab animi, sunt voluptate alias quisquam laudantium architecto amet tempora culpa iure dignissimos qui harum odit vitae consectetur nisi iusto magnam nulla. Placeat nulla quo corrupti magni fugit omnis doloremque itaque, beatae necessitatibus unde similique provident optio, reiciendis nesciunt consequuntur nihil consequatur, quidem at commodi et? Ipsam fuga labore minima nesciunt impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, doloremque nam laboriosam quia perspiciatis harum repellat praesentium nobis impedit! Quas praesentium accusamus earum illum rerum a pariatur? Sint delectus aliquam est exercitationem sit voluptates ut optio, ipsam officiis tempora omnis labore explicabo cupiditate, facilis totam neque, fugiat ducimus non in.</p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ratione quia laboriosam quod, nostrum accusamus laudantium quae laborum amet beatae voluptas dolore vel magnam rem molestias ducimus doloribus veniam enim vero id exercitationem provident et inventore consectetur. Incidunt ad ratione ex nisi unde quibusdam laboriosam delectus veniam corporis eveniet, perspiciatis quasi totam, deserunt architecto! Deleniti iusto ipsa consectetur dicta quam.</p>
+
+    <input class="b" type="checkbox" name="" id="checkbox" placeholder="checkbox">
+</body>
+</html>
